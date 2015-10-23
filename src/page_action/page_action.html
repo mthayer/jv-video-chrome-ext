@@ -1,0 +1,100 @@
+<!doctype html>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+<script src="../../js/jquery/jquery.min.js"></script>
+<script type="text/javascript" src="page_action.js"></script>
+<style type="text/css">
+	#mainPopup {
+		padding: 10px;
+		height: 200px;
+		width: 600px;
+		font-family: Helvetica, Ubuntu, Arial, sans-serif;
+	}
+	h1 {
+		font-size: 2em;
+	}
+</style>
+
+<div id="mainPopup">
+  <small class="pull-right"><a tabindex="3" target="_blank" href="https://careers.jobvite.com/video-assets/video-help.html">Help</a></small>
+<h1>Select template</h1>
+<p class="text-danger">Be sure to click the <kbd><></kbd> button on the edit page before selecting a template.</p>
+<form id="logoForm" role="form">
+	<label for="exampleInputEmail1">Enter customer logo Url</label>
+    <input tabindex="1" type="text" class="form-control" placeholder="Url" id="logo" value="http://hdimages.mobi/wp-content/uploads/spacex-logo-7.png">
+</form>
+<br/>
+<div class="panel panel-default">
+  <div class="panel-heading">
+  	<h4>Envelope</h4>
+  </div>
+  <div class="panel-body">
+    <img class="img-responsive" width="100%" src="../../img/ss-1.jpg"/>
+    <form id="envelope" role="form">
+    	<input type="hidden" id="envelope">
+  		<button id="envelope" type="submit" class="btn btn-success">Select</button>
+	</form>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading">
+  	<h4>Video</h4>
+  </div>
+  <div class="panel-body">
+    <img class="img-responsive" width="100%" src="../../img/ss-2.jpg"/>
+    <form role="form">
+  		<div class="form-group">
+    		<label for="exampleInputEmail1">Enter Video Url</label>
+    		<input type="text" class="form-control" id="videoUrl" placeholder="Enter Url" value="https://www.youtube.com/embed/mg3sVsARqYY">
+  		</div>
+  		<button id="video" type="submit" class="btn btn-success">Select</button>
+	</form>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Image + Quote</h4></div>
+  <div class="panel-body">
+    <img class="img-responsive" width="100%" src="../../img/ss-3.jpg"/>
+    <form role="form">
+  		<div class="form-group">
+    		<label for="exampleInputEmail1">Image Url</label>
+    		<input type="text" class="form-control" id="imageQuote" placeholder="Enter Url" value="https://careers.jobvite.com/logitech/img/banner/home3.jpg">
+  		</div>
+  		<button id="imageQuote" type="submit" class="btn btn-success">Select</button>
+	</form>
+  </div>
+</div>
+
+<div class="panel panel-default">
+  <div class="panel-heading"><h4>Big Images</h4></div>
+  <div class="panel-body">
+    <img class="img-responsive" width="100%" src="../../img/ss-4.jpg"/>
+    <form role="form">
+  		<div class="form-group">
+    		<label for="exampleInputEmail1">Big Image Url</label>
+        <input type="" class="form-control" id="bigImage" placeholder="Enter Url" value="https://careers.jobvite.com/video-assets/bg-2.jpg">
+        <div class="checkbox">
+          <label>
+            <input id="white-text" type="checkbox" value="" checked>
+            Use White Text
+          </label>
+        </div>
+  		</div>
+  		<button id="bigImage" type="submit" class="btn btn-success">Select</button>
+	</form>
+  </div>
+</div>
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4>Confirmation Envelope</h4>
+  </div>
+  <div class="panel-body">
+    <img class="img-responsive" width="100%" src="../../img/ss-5.jpg"/>
+    <form id="confirm-envelope" role="form">
+      <input type="hidden" id="confirmEnvelope">
+      <button id="confirm-envelope" type="submit" class="btn btn-success">Select</button>
+  </form>
+  </div>
+</div>
+</div>
